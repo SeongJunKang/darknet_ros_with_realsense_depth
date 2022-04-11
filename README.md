@@ -149,12 +149,8 @@ $ roslaunch darknet_ros darknet_ros.launch
 <img src="readmemedia/camera_and_yolo.png" width=90%>
 </div>
 
-And use `darknet_ros/darknet_ros/scripts/ObjectDistance.py`
-```bash 
-$ python ObjectDistance.py 
-```
-
-Now we can see the topic for distance `/darknet_ros/distance`
+This file  `darknet_ros/darknet_ros/src/ObjectDistance.py` generate distance topic 
+We can see the topic for distance `/darknet_ros/distance`
 ```bash
 $ rostopic list
 ```
