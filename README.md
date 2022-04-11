@@ -184,9 +184,8 @@ I would like to thank the developers who made these repositories available to me
 This software is released under the MIT License, see LICENSE.
 
 # Autor
-Original repository : Tossy Japan, Osaka
-This repository : SeongJun Kang Korea, Seoul
-<br>
+Original repository : Tossy Japan, Osaka<br>
+This repository : SeongJun Kang Korea, Seoul<br>
 
 
 
