@@ -31,7 +31,7 @@ $ cd src
 $ git clone --recursive https://github.com/SeongJunKang/yolov4-for-darknet_ros.git
 ```
 
-Directory tree structure
+Directory tree structure and update files
 ```
 ├── darknet
 │   ├── 3rdparty
@@ -57,11 +57,14 @@ Directory tree structure
 │   ├── data
 │   │   └── labels
 │   ├── include
+│   │   └── *darknet.h
 │   ├── results
 │   ├── scripts
 │   │   ├── log_parser
 │   │   └── windows
 │   └── src
+│       └── *image.c
+│       └── *image.h
 ├── darknet_ros
 │   ├── config
 │   ├── doc
@@ -70,6 +73,7 @@ Directory tree structure
 │   ├── launch
 │   ├── scripts
 │   ├── src
+│   │   └── *YoloObjectDetector.cpp
 │   ├── test
 │   └── yolo_network_config
 │       ├── cfg
@@ -149,8 +153,6 @@ $ roslaunch darknet_ros darknet_ros.launch
 <img src="readmemedia/camera_and_yolo.png" width=90%>
 </div>
 
-This file  `darknet_ros/darknet_ros/src/ObjectDistance.py` generate distance topic 
-We can see the topic for distance `/darknet_ros/distance`
 ```bash
 $ rostopic list
 ```
@@ -159,12 +161,14 @@ $ rostopic list
 </div>
 
 ```bash
-$ rostopic topic /darknet_ros/distance
+$ rostopic topic /darknet_ros/bounding_boxes
 ```
 <div align=center>
 <img src="readmemedia/distance.png" width=90%>
 </div>
 
+## Depth distance unit
+depth distance value units is millimeter.
 
 # How to build this environment??
 Here is the documentation to set up this environment.
