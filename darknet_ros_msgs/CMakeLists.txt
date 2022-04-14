@@ -18,8 +18,6 @@ add_message_files(
     BoundingBox.msg
     BoundingBoxes.msg
     ObjectCount.msg
-    ObjectDistance.msg
-    ObjectDistances.msg
 )
 
 add_action_files(
